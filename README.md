@@ -4,6 +4,8 @@
 
 [Official Node.js documentation](https://nodejs.org/docs/latest/api/addons.html)
 
+[Native Abstraction for Node.js](https://github.com/nodejs/nan)
+
 [Official Node.js examples](https://github.com/nodejs/node-addon-examples)
 
 [The V8 Getting started guide](https://developers.google.com/v8/get_started)
