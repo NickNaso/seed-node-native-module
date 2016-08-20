@@ -25,7 +25,6 @@ void MyFunction(const Nan::FunctionCallbackInfo<v8::Value>& info) {
   info.GetReturnValue().Set(Nan::New("This is a seed project to build Node.js native module.").ToLocalChecked());
 }
 
-
 /**
 * This code is our entry-point. We can receive up to two arguments here, the first
 * is exports, the same as module.exports in a .js file and the second argument
