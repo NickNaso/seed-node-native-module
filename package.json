@@ -1,17 +1,47 @@
 {
-  "name": "application-name",
+  "name": "seed-node-native-module",
+  "description": "This is a seed project to build Node.js native module",
   "version": "0.0.1",
-  "description": "My seed for nodejs native module",
   "private": true,
-  "main": "hello.js",
-  "dependenncies": {},
-  "devDependencies": {},
+  "author": "Nicola Del Gobbo <nicoladelgobbo@gmail.com>",
+  "keywords": [
+    "c++",
+    "native",
+    "module",
+    "nodejs",
+    "addon",
+    "v8"
+  ],
+  "license": "Apache-2.0",
   "scripts": {
-    "test": "node hello.js"
+    "test": "node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=test/jasmine.json",
+    "build": "node-gyp rebuild"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickNaso/seed-node-native-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NickNaso/seed-node-native-module/issues"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
   },
   "gypfile": true,
   "dependencies": {
     "bindings": "^1.2.1",
     "nan": "^2.4.0"
-  }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "index.js",
+    "lib/",
+    "src/"
+  ]
 }

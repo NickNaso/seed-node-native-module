@@ -16,4 +16,16 @@
  * Nicola Del Gobbo <nicoladelgobbo@gmail.com>
  ******************************************************************************/
 
-module.exports = require('./lib/seed-node-native-module');
+'use strict';
+
+/*!
+ * Module dependencies
+ */
+const myModule = require('../');
+const MY_TEXT = "This is a seed project to build Node.js native module.";
+
+describe("Test seed-node-native-module", function () {
+    it('Should return text equal to MY_TEXT', function () {
+        expect(myModule.myFunction()).toEqual(MY_TEXT);
+    });
+});
