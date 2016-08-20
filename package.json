@@ -1,0 +1,17 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "description": "My seed for nodejs native module",
+  "private": true,
+  "main": "hello.js",
+  "dependenncies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node hello.js"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.4.0"
+  }
+}
